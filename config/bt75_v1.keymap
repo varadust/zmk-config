@@ -50,7 +50,7 @@
         // | TAB  |  Q  |  W  |  E  | HUI | HUD |  Y  |  U  |  I  |  O  |  P  | SLCK|  ]  |  RESET   | P_BRK|
         // | CAPS  |  A  |  S  |  D  | BRI | BRD |  H  |  J  |  K  |  L  |  ;  |  '  |     BOOT      | PG_UP|
         // |  SHIFT   |VOLDN|VOLUP| MUTE|BLINC|BLDEC|  N  |  M  |  ,  |  .  |  /  |    SHIFT  | UP   | PG_DN|
-        // | BT_PRV| BT_NXT|  ALT  |            SPACE               | ALT |  1  | CTRL | LEFT | DOWN |BT_CLR|
+        // | BT_PRV| BT_NXT|  STDULK  |            SPACE               | ALT |  1  | CTRL | LEFT | DOWN |BT_CLR|
         // --------------------------------------------------------------------------------------------------
       bindings = <
         &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
@@ -58,7 +58,7 @@
         &trans &trans &trans &trans &rgb_ug RGB_HUI &rgb_ug RGB_HUD &trans &trans &trans &trans &trans &kp SLCK &trans &sys_reset &kp PAUSE_BREAK
         &trans    &trans &trans &trans &rgb_ug RGB_BRI &rgb_ug RGB_BRD &trans &trans &trans &trans &trans  &trans   &bootloader &trans
         &trans &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &bl BL_INC &bl BL_DEC &trans &trans &trans &trans &trans  &trans &trans &trans
-        &bt BT_PRV &bt BT_NXT &trans              &trans                            &trans   &trans   &trans &trans  &trans &bt BT_CLR
+        &bt BT_PRV &bt BT_NXT &studio_unlock              &trans                            &trans   &trans   &trans &trans  &trans &bt BT_CLR
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
